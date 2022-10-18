@@ -10,10 +10,11 @@
 #
 
 import imghdr
+import json
 import os
-import random
 import re
 import sys
+#import tempfile
 import time
 import urllib
 import yaml
@@ -25,14 +26,20 @@ import tweepy
 
 # This is the regular expression that selects the papers of interest
 regex = re.compile(r"""
-  (   \b(MOF|MOFs|COF|COFs|ZIF|ZIFs)\b
-    | metal.organic.framework
-    | covalent.organic.framework
-    | metal–organic.framework
-    | covalent–organic.framework
-    | imidazolate.framework
-    | porous.coordination.polymer
-    | framework.material
+  (   chemical.gardens
+    | chemical.garden
+    | chemgarden
+    | chemgardens
+    | silica.garden
+    | silica.gardens
+    | chemobrionics
+    | chemobrionic
+    | mineral.membranes
+    | mineral.membrane
+    | hydrothermal.chimney
+    | hydrothermal.chimneys
+    | hydrothermal.vents
+    | hydrothermal.vent
   )
   """, re.IGNORECASE | re.VERBOSE)
 
@@ -50,6 +57,74 @@ def entryMatches(entry):
     else:
         return False
 
+#Modified by https://github.com/boyntonr/PapersBot
+acsTwitter = {
+    "acsearthspacechem": "ACSEarthSpace", "acsaem": "acs_aem", "acsami": "acs_ami", "acsanm": "acs_anm", "acscatal": "ACSCatalysis",
+    "acscentsci": "ACSCentSci", "acsenergylett": "ACSEnergyLett", "acsnano": "acsnano", "acssuschemeng": "ACSSustainable",
+    "acs.chemrev": "ACSChemRev", "acs.chemmater": "ChemMater", "acs.cgd": "CGD_ACS", "acs.est": "EnvSciTech",
+    "acs.inorgchem": "InorgChem", "jacs": "J_A_C_S", "acs.jcim": "JCIM_ACS", "acs.jpcb": "JPhysChem", "acs.jpcc": "JPhysChem",
+    "acs.jpclett": "JPhysChem", "acs.langmuir": "ACS_Langmuir", "acs.nanolett": "NanoLetters"}
+rscTwitter = {
+    "BM": "BioMaterSci", "CY": "CatalysisSciTec", "CC": "ChemCommun", "SC": "ChemicalScience", "CS": "ChemSocRev", "CE": "CrystEngComm",
+    "DT": "DaltonTrans", "EE": "EES_journal", "EN": "EnvSciRSC", "FD": "Faraday_D", "GC": "green_rsc", "TA": "JMaterChem",
+    "TB": "JMaterChem", "TC": "JMaterChem", "NR": "Nanoscale_RSC", "CP": "PCCP", "SM": "SoftMatter"}
+natureTwitter = {
+    "s41563": "NatureMaterials", "s41557": "NatureChemistry", "s42004": "CommsChem", "s41467": "NatureComms",
+    "s41929": "NatureCatalysis", "s41560": "NatureEnergyJnl", "s41565": "NatureNano", "s41567": "NaturePhysics",
+    "s42005": "CommsPhys", "s41570": "NatRevChem", "s41578": "NatRevMater"}
+wileyTwitter = {
+    "adma": "AdvMater", "adfm": "AdvFunctMater", "anie": "angew_chem", "chem": "ChemEurJ", "asia": "ChemAsianJ",
+    "cplu": "ChemPlusChem", "cphc": "ChemPhysChem", "slct": "ChemistrySelect", "syst": "chemsystemschem"}
+apsTwitter = {"PhysRevLett": "PhysRevLett", "PhysRevX": "PhysRevX", "PhysRevB": "PhysRevB", "PhysRevMaterials": "PhysRevMater"}
+mdpiTwitter = {"2076": "Applsci", "2075": "Minerals_MDPI", "2073": "Crystals_MDPI"}
+iopTwitter = {"0295-5075": "epl_journal"}
+rspubTwitter = {"rsfs": "RSocPublishing", "rsta": "RSocPublishing", "rspa": "RSocPublishing", "rspb": "RSocPublishing"}
+
+# From a given URL, figure out the corresponding journal Twitter handle
+# (This will work well for ACS, RSC, and Wiley Chemistry)
+# Elsevier journals are not included yet
+# AGU journals are not included
+def journalHandle(url):
+    try:
+        if "doi.org/10.1021/" in url:
+            j = ".".join(url.split("/")[-1].split(".")[:-1])
+            return acsTwitter[j]
+        if "pubs.rsc.org/en/Content/ArticleLanding" in url:
+            j = url.split("/")[-2].split(".")[0]
+            return rscTwitter[j]
+        if "www.nature.com/articles" in url:
+            j = url.split("/")[-1].split("-")[0]
+            return natureTwitter[j]
+        if "onlinelibrary.wiley.com/doi/abs/10.1002/" in url:
+            j = url.split("/")[-1].split(".")[0]
+            return wileyTwitter[j]
+        if "link.aps.org/doi/10.1103/" in url:
+            j = url.split("/")[-1].split(".")[0]
+            return apsTwitter[j]
+        if "www.mdpi.com/" in url:
+            j = url.split("/")[-4].split("-")[0]
+            return mdpiTwitter[j]
+        if "iopscience.iop.org/article" in url:
+            j = url.split("/")[-2].split("/")[0]
+            return iopTwitter[j]
+        if "royalsocietypublishing.org/" in url:
+            j = url.split("/")[-1].split(".")[0]
+            return rspubTwitter[j]
+        if "chemrxiv.org/" in url:
+            return "chemRxiv"
+        if "advances.sciencemag.org/" in url:
+            return "ScienceAdvances"
+        if "science.sciencemag.org/" in url:
+            return "ScienceMagazine"
+        if "aip.scitation.org/doi/10.1063/" in url:
+            return "AIP_Publishing"
+        if "10.1089/ast." in url:
+            return "Astrobiology_jn"
+        if "pnas.org" in url:
+            return "PNASNews"
+    except Exception:
+        return None
+
 
 # Find the URL for an image associated with the entry
 def findImage(entry):
@@ -60,8 +135,6 @@ def findImage(entry):
     img = soup.find("img")
     if img:
         img = img["src"]
-        if len(img) == 0:
-            return
         # If address is relative, append root URL
         if img[0] == "/":
             p = urllib.parse.urlparse(entry.id)
@@ -96,26 +169,33 @@ def downloadImage(url):
 
 
 # Connect to Twitter and authenticate
-#   Credentials are passed in the environment,
-#   or stored in "credentials.yml" which contains four lines:
+#   Credentials are stored in "credentials.yml" which contains four lines:
 #   CONSUMER_KEY: "x1F3s..."
 #   CONSUMER_SECRET: "3VNg..."
 #   ACCESS_KEY: "7109..."
 #   ACCESS_SECRET: "AdnA..."
 #
 def initTwitter():
-    if 'CONSUMER_KEY' in os.environ:
-        cred = {'CONSUMER_KEY': os.environ['CONSUMER_KEY'],
-                'CONSUMER_SECRET': os.environ['CONSUMER_SECRET'],
-                'ACCESS_KEY': os.environ['ACCESS_KEY'],
-                'ACCESS_SECRET': os.environ['ACCESS_SECRET']}
-    else:
-        with open("credentials.yml", "r") as f:
-            cred = yaml.safe_load(f)
-
+    with open("credentials.yml", "r") as f:
+        cred = yaml.safe_load(f)
     auth = tweepy.OAuthHandler(cred["CONSUMER_KEY"], cred["CONSUMER_SECRET"])
     auth.set_access_token(cred["ACCESS_KEY"], cred["ACCESS_SECRET"])
     return tweepy.API(auth)
+
+
+def getTwitterConfig(api):
+    # Check for cached configuration, no more than a day old
+    if os.path.isfile("twitter_config.dat"):
+        mtime = os.stat("twitter_config.dat").st_mtime
+        if time.time() - mtime < 24 * 60 * 60:
+            with open("twitter_config.dat", "r") as f:
+                return json.load(f)
+
+    # Otherwise, query the Twitter API and cache the result
+    #config = api.configuration()
+    #with open("twitter_config.dat", "w") as f:
+    #    json.dump(config, f)
+    #return config
 
 
 # Read our list of feeds from file
@@ -129,7 +209,7 @@ def readFeedsList():
 def cleanText(s):
     # Annoying ASAP tags
     s = s.replace("[ASAP]", "")
-    # Some feeds have LF characters
+    # Some feeds have LF characeters
     s = s.replace("\x0A", "")
     # Remove (arXiv:1903.00279v1 [cond-mat.mtrl-sci])
     s = re.sub(r"\(arXiv:.+\)", "", s)
@@ -142,7 +222,7 @@ def readPosted():
     try:
         with open("posted.dat", "r") as f:
             return f.read().splitlines()
-    except OSError:
+    except Exception:
         return []
 
 
@@ -159,17 +239,13 @@ class PapersBot:
         try:
             with open("config.yml", "r") as f:
                 config = yaml.safe_load(f)
-        except OSError:
+        except Except:
             config = {}
         self.throttle = config.get("throttle", 0)
         self.wait_time = config.get("wait_time", 5)
-        self.shuffle_feeds = config.get("shuffle_feeds", True)
+        self.handles = config.get("handles", True)
         self.blacklist = config.get("blacklist", [])
         self.blacklist = [re.compile(s) for s in self.blacklist]
-
-        # Shuffle feeds list
-        if self.shuffle_feeds:
-            random.shuffle(self.feeds)
 
         # Connect to Twitter, unless requested not to
         if doTweet:
@@ -187,11 +263,8 @@ class PapersBot:
         # Start-up banner
         print(f"This is PapersBot running at {time.strftime('%Y-%m-%d %H:%M:%S %Z')}")
         if self.api:
-            timeline = self.api.user_timeline(count=1)
-            if len(timeline) > 0:
-                print(f"Last tweet was posted at {timeline[0].created_at} (UTC)")
-            else:
-                print(f"No tweets posted yet? Welcome, new user!")
+            last = self.api.user_timeline(count=1)[0].created_at
+            print(f"Last tweet was posted at {last} (UTC)")
         print(f"Feed list has {len(self.feeds)} feeds\n")
 
     # Add to tweets posted
@@ -203,22 +276,17 @@ class PapersBot:
     # Send a tweet for a given feed entry
     def sendTweet(self, entry):
         title = cleanText(htmlToText(entry.title))
+        url = entry.id
         length = self.maxlength
 
-        # Usually the ID is the canonical URL, but not always
-        if entry.id[:8] == "https://" or entry.id[:7] == "http://":
-            url = entry.id
-        else:
-            url = entry.link
-
-        # URL may be malformed
-        if not (url[:8] == "https://" or url[:7] == "http://"):
-            print(f"INVALID URL: {url}\n")
-            return
+        handle = journalHandle(url)
+        if self.handles and handle:
+            length -= len(handle) + 2
+            url = f"@{handle} {url}"
 
         tweet_body = title[:length] + " " + url
 
-        # URL may match our blacklist
+        # Some URLs may match our blacklist
         for regexp in self.blacklist:
             if regexp.search(url):
                 print(f"BLACKLISTED: {tweet_body}\n")
@@ -236,14 +304,7 @@ class PapersBot:
 
         print(f"TWEET: {tweet_body}\n")
         if self.api:
-            try:
-                self.api.update_status(tweet_body, media_ids=media)
-            except tweepy.error.TweepError as e:
-                if e.api_code == 187:
-                    print("ERROR: Tweet refused as duplicate\n")
-                else:
-                    print(f"ERROR: Tweet refused, {e.reason}\n")
-                    sys.exit(1)
+            self.api.update_status(tweet_body, media_ids=media)
 
         self.addToPosted(entry.id)
         self.n_tweeted += 1
