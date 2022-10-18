@@ -1,136 +1,179 @@
 # ACS
-http://feeds.feedburner.com/acs/aaemcq
-http://feeds.feedburner.com/acs/aamick
-http://feeds.feedburner.com/acs/aanmf6
-http://feeds.feedburner.com/acs/accacs
-http://feeds.feedburner.com/acs/achre4
-http://feeds.feedburner.com/acs/acscii
-http://feeds.feedburner.com/acs/acsodf
-http://feeds.feedburner.com/acs/aelccp
-http://feeds.feedburner.com/acs/ancac3
-http://feeds.feedburner.com/acs/aoiab5
-http://feeds.feedburner.com/acs/ascecg
-http://feeds.feedburner.com/acs/cgdefu
-http://feeds.feedburner.com/acs/chreay
-http://feeds.feedburner.com/acs/cmatex
-http://feeds.feedburner.com/acs/enfuem
-http://feeds.feedburner.com/acs/esthag
-http://feeds.feedburner.com/acs/estlcu
-http://feeds.feedburner.com/acs/iecred
-http://feeds.feedburner.com/acs/inocaj
-http://feeds.feedburner.com/acs/jaaucr
-http://feeds.feedburner.com/acs/jacsat
-http://feeds.feedburner.com/acs/jceda8
-http://feeds.feedburner.com/acs/jcisd8
-http://feeds.feedburner.com/acs/jctcce
-http://feeds.feedburner.com/acs/jmcmar
-http://feeds.feedburner.com/acs/jnprdf
-http://feeds.feedburner.com/acs/joceah
-http://feeds.feedburner.com/acs/jpcbfk
-http://feeds.feedburner.com/acs/jpccck
-http://feeds.feedburner.com/acs/jpclcd
-http://feeds.feedburner.com/acs/langd5
-http://feeds.feedburner.com/acs/nalefd
-http://feeds.feedburner.com/acs/oprdfk
-http://feeds.feedburner.com/acs/orgnd7
-http://feeds.feedburner.com/acs/orlef7
+http://feeds.feedburner.com/acs/aesccq1 #ACS Earth and Space Chemistry
+http://feeds.feedburner.com/acs/aaemcq #ACS Applied Energy Materials
+http://feeds.feedburner.com/acs/aamick #ACS Applied Materials & Interfaces
+http://feeds.feedburner.com/acs/aanmf6 #ACS Applied Nano Materials
+http://feeds.feedburner.com/acs/accacs #ACS Catalysis
+http://feeds.feedburner.com/acs/achre4 #Accounts of Chemical Research
+http://feeds.feedburner.com/acs/acscii #ACS Central Science
+http://feeds.feedburner.com/acs/acsodf #ACS Omega
+http://feeds.feedburner.com/acs/aelccp #ACS Energy Letters
+http://feeds.feedburner.com/acs/ancac3 #ACS Nano
+http://feeds.feedburner.com/acs/aoiab5 #ACS Organic & Inorganic Au
+http://feeds.feedburner.com/acs/ascecg #ACS Sustainable Chemistry & Engineering
+http://feeds.feedburner.com/acs/cgdefu #Crystal Growth and Design
+http://feeds.feedburner.com/acs/chreay #Chemical Reviews
+http://feeds.feedburner.com/acs/cmatex #Chemistry of Materials
+http://feeds.feedburner.com/acs/enfuem #Energy & Fuels
+http://feeds.feedburner.com/acs/esthag #Environmental Science & Technology
+http://feeds.feedburner.com/acs/estlcu #Environmental Science & Technology Letters
+http://feeds.feedburner.com/acs/iecred #Industrial & Engineering Chemistry Research
+http://feeds.feedburner.com/acs/inocaj #Inorganic Chemistry
+http://feeds.feedburner.com/acs/jaaucr #JACS Au
+http://feeds.feedburner.com/acs/jacsat #Journal of the American Chemical Society
+http://feeds.feedburner.com/acs/jceda8 #Journal of Chemical Education
+http://feeds.feedburner.com/acs/jcisd8 #Journal of Chemical Information and Modeling
+http://feeds.feedburner.com/acs/jctcce #Journal of Chemical Theory and Computation
+http://feeds.feedburner.com/acs/jmcmar #Journal of Medicinal Chemistry
+http://feeds.feedburner.com/acs/jnprdf #Journal of Natural Products
+http://feeds.feedburner.com/acs/joceah #The Journal of Organic Chemistry
+http://feeds.feedburner.com/acs/jpcafh #The Journal of Physical Chemistry A									   
+http://feeds.feedburner.com/acs/jpcbfk #The Journal of Physical Chemistry B
+http://feeds.feedburner.com/acs/jpccck #The Journal of Physical Chemistry C
+http://feeds.feedburner.com/acs/jpclcd #The Journal of Physical Chemistry Letters
+http://feeds.feedburner.com/acs/langd5 #langmuir 
+http://feeds.feedburner.com/acs/nalefd #Nano Letters
+http://feeds.feedburner.com/acs/oprdfk #Organic Process Research & Development
+http://feeds.feedburner.com/acs/orgnd7 #Organometallics
+http://feeds.feedburner.com/acs/orlef7 #Organic Letters
 http://pubs.acs.org/editorschoice/feed/rss
 # RSC
-http://feeds.rsc.org/rss/cc
-http://feeds.rsc.org/rss/ce
-http://feeds.rsc.org/rss/cp
-http://feeds.rsc.org/rss/cs
-http://feeds.rsc.org/rss/cy
-http://feeds.rsc.org/rss/dd
-http://feeds.rsc.org/rss/dt
-http://feeds.rsc.org/rss/ee
-http://feeds.rsc.org/rss/en
-http://feeds.rsc.org/rss/fd
-http://feeds.rsc.org/rss/gc
-http://feeds.rsc.org/rss/lc
-http://feeds.rsc.org/rss/nj
-http://feeds.rsc.org/rss/nr
-http://feeds.rsc.org/rss/ob
-http://feeds.rsc.org/rss/re
-http://feeds.rsc.org/rss/rp
-http://feeds.rsc.org/rss/sc
-http://feeds.rsc.org/rss/sm
-http://feeds.rsc.org/rss/ta
-http://feeds.rsc.org/rss/tb
-http://feeds.rsc.org/rss/tc
+http://feeds.rsc.org/rss/bm #Biomaterials science
+http://feeds.rsc.org/rss/cc #RSC - Chem. Commun
+http://feeds.rsc.org/rss/ce #RSC - CrystEngComm
+http://feeds.rsc.org/rss/cp #RSC - Phys. Chem. Chem. Phys
+http://feeds.rsc.org/rss/cs #RSC - Chem. Soc. Rev.
+http://feeds.rsc.org/rss/cy #RSC - Catal. Sci. Technol.
+http://feeds.rsc.org/rss/dd #RSC - Digital Discovery
+http://feeds.rsc.org/rss/dt #RSC - Dalton Trans.
+http://feeds.rsc.org/rss/ee #RSC - Energy Environ. Sci.
+http://feeds.rsc.org/rss/en #RSC - Environ. Sci.: Nano
+http://feeds.rsc.org/rss/fd #RSC - Faraday Discuss.
+http://feeds.rsc.org/rss/gc #RSC - Green Chem.
+http://feeds.rsc.org/rss/lc #RSC - Lab Chip
+http://feeds.rsc.org/rss/nj #RSC - New J. Chem
+http://feeds.rsc.org/rss/nr #RSC - Nanoscale
+http://feeds.rsc.org/rss/ob #RSC - Org. Biomol. Chem. 
+http://feeds.rsc.org/rss/re #RSC - React. Chem. Eng.
+http://feeds.rsc.org/rss/rp #RSC - Chem. Educ. Res. Pract.
+http://feeds.rsc.org/rss/sc #RSC - Chem. Sci.
+http://feeds.rsc.org/rss/sm #RSC - Soft Matter
+http://feeds.rsc.org/rss/ta #RSC - J. Mater. Chem. A
+http://feeds.rsc.org/rss/tb #RSC - J. Mater. Chem. B
+http://feeds.rsc.org/rss/tc #RSC - J. Mater. Chem. C
 # Nature
-http://feeds.nature.com/commschem/rss/current
-http://feeds.nature.com/commsphys/rss/current
-http://feeds.nature.com/natcatal/rss/current
-http://feeds.nature.com/natrevchem/rss/current
-http://feeds.nature.com/natrevmats/rss/current
-http://feeds.nature.com/natrevphys/rss/current
-http://feeds.nature.com/nature/rss/current
-http://feeds.nature.com/nchem/rss/current
-http://feeds.nature.com/ncomms/rss/current
-http://feeds.nature.com/nenergy/rss/current
-http://feeds.nature.com/nmat/rss/current
-http://feeds.nature.com/nnano/rss/current
-http://feeds.nature.com/nphys/rss/current
-http://feeds.nature.com/npjcompumats/rss/current
-http://feeds.nature.com/npjqi/rss/current
-http://feeds.nature.com/npjquantmats/rss/current
-http://feeds.nature.com/sdata/rss/current
-http://feeds.nature.com/srep/rss/current
+http://feeds.nature.com/commschem/rss/current #Communications Chemistry
+http://feeds.nature.com/commsphys/rss/current #Communications Physics
+http://feeds.nature.com/natcatal/rss/current #Nature Catalysis
+http://feeds.nature.com/natrevchem/rss/current #Nature Reviews Chemistry
+http://feeds.nature.com/natrevmats/rss/current #Nature Reviews Materials
+http://feeds.nature.com/natrevphys/rss/current #Nature Reviews Physics
+http://feeds.nature.com/nature/rss/current #Nature
+http://feeds.nature.com/nchem/rss/current #Nature Chemistry
+http://feeds.nature.com/ncomms/rss/current #Nature Communications
+http://feeds.nature.com/nenergy/rss/current #Nature Energy 
+http://feeds.nature.com/nmat/rss/current #Nature Materials
+http://feeds.nature.com/nnano/rss/current #Nature Nanotechnology
+http://feeds.nature.com/nphys/rss/current #Nature Physics
+http://feeds.nature.com/npjcompumats/rss/current #npj Computational Materials
+http://feeds.nature.com/npjqi/rss/current #npj Quantum Information
+http://feeds.nature.com/npjquantmats/rss/current #npj Quantum Materials
+http://feeds.nature.com/sdata/rss/current #Scientific Data
+http://feeds.nature.com/srep/rss/current #Scientific Reports
 # Science
-http://advances.sciencemag.org/rss/current.xml
-http://science.sciencemag.org/rss/express.xml
+http://advances.sciencemag.org/rss/current.xml #AAAS: Science Advances
+http://science.sciencemag.org/rss/express.xml #Science
+#Springer
+https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=43577&channel-name=MRS+Bulletin #MRS Bulletin
+http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10853&channel-name=Journal+of+Materials+Science #Journal of Materials Science
+http://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10971&channel-name=Journal+of+Sol-Gel+Science+and+Technology #Journal of Sol-Gel Science and Technology
+https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10450&channel-name=Adsorption #Adsorption
+https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=41981&channel-name=Journal+of+Flow+Chemistry #Journal of flow chemistry
+https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=11084&channel-name=OriginsofLifeandEvolutionofBiospheres #Origin of Life and Evolution of Biospheres
+https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=11224&channel-name=StructuralChemistry #Structural chemistry
 # Wiley
-https://onlinelibrary.wiley.com/action/showFeed?jc=1096987x&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=10990682c&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=10990690&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=14397641&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=15213765&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=15213773&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=15214095&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=15280691&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=15475905&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=16136829&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=16146840&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=16163028&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=18607187&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=1861471x&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=18673899&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=21911363&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=21926506&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=21960216&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=23656549&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=23670932&type=etoc&feed=rss
-https://onlinelibrary.wiley.com/action/showFeed?jc=26289725&type=etoc&feed=rss
+https://onlinelibrary.wiley.com/action/showFeed?jc=1096987x&type=etoc&feed=rss #Journal of Computational Chemistry
+https://onlinelibrary.wiley.com/action/showFeed?jc=10990682c&type=etoc&feed=rss #European Journal of Inorganic Chemistry
+https://onlinelibrary.wiley.com/action/showFeed?jc=10990690&type=etoc&feed=rss #European Journal of Organic Chemistry
+https://onlinelibrary.wiley.com/action/showFeed?jc=14397641&type=etoc&feed=rss #ChemPhysChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=15213765&type=etoc&feed=rss #Chemistry – A European Journal
+https://onlinelibrary.wiley.com/action/showFeed?jc=15213773&type=etoc&feed=rss #Angewandte Chemie International Edition
+https://onlinelibrary.wiley.com/action/showFeed?jc=15214095&type=etoc&feed=rss #Advanced Materials
+https://onlinelibrary.wiley.com/action/showFeed?jc=15280691&type=etoc&feed=rss #The Chemical Record
+https://onlinelibrary.wiley.com/action/showFeed?jc=15475905&type=etoc&feed=rss #AIChE Journal
+https://onlinelibrary.wiley.com/action/showFeed?jc=16136829&type=etoc&feed=rss #Small
+https://onlinelibrary.wiley.com/action/showFeed?jc=16146840&type=etoc&feed=rss #Advanced Energy Materials
+https://onlinelibrary.wiley.com/action/showFeed?jc=16163028&type=etoc&feed=rss #Advanced Functional Materials
+https://onlinelibrary.wiley.com/action/showFeed?jc=18607187&type=etoc&feed=rss #ChemMedChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=1861471x&type=etoc&feed=rss #Chemistry – An Asian Journal
+https://onlinelibrary.wiley.com/action/showFeed?jc=18673899&type=etoc&feed=rss #ChemCatChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=21911363&type=etoc&feed=rss #ChemistryOpen
+https://onlinelibrary.wiley.com/action/showFeed?jc=21926506&type=etoc&feed=rss #ChemPlusChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=21960216&type=etoc&feed=rss #ChemElectroChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=23656549&type=etoc&feed=rss #ChemistrySelect
+https://onlinelibrary.wiley.com/action/showFeed?jc=23670932&type=etoc&feed=rss #ChemPhotoChem
+https://onlinelibrary.wiley.com/action/showFeed?jc=26289725&type=etoc&feed=rss #Chemistry–Methods
+https://onlinelibrary.wiley.com/feed/21922659/most-recent #Advanced Healthcare Materials
+https://chemistry-europe.onlinelibrary.wiley.com/feed/25704206/most-recent #ChemSystemsChem
+https://onlinelibrary.wiley.com/feed/14724669/most-recent #Geobiology
+https://onlinelibrary.wiley.com/feed/15214176/most-recent #Materials and corrosion
+https://agupubs.onlinelibrary.wiley.com/feed/15252027/most-recent #Geochemistry, Geophysics, Geosystems
+https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021GL092883 #Geophysical Research letters
+https://agupubs.onlinelibrary.wiley.com/feed/21699291/most-recent #Journal of Geophysical Research: Oceans
 # Elsevier
-http://rss.sciencedirect.com/publication/science/00108545
-http://rss.sciencedirect.com/publication/science/00108545
-http://rss.sciencedirect.com/publication/science/00404020
-http://rss.sciencedirect.com/publication/science/00404039
-http://rss.sciencedirect.com/publication/science/13871811
-http://rss.sciencedirect.com/publication/science/13877003
-https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10450&channel-name=Adsorption
-https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=41981&channel-name=Journal+of+Flow+Chemistry
-https://www.cell.com/cell-reports-physical-science/inpress.rss
-https://www.cell.com/chem/inpress.rss
-https://www.cell.com/matter/inpress.rss
+http://rss.sciencedirect.com/publication/science/00108545 #Coordination Chemistry Reviews
+https://rss.sciencedirect.com/publication/science/17427061 #Acta biomateralia
+http://rss.sciencedirect.com/publication/science/00404020 #Tetrahedron
+http://rss.sciencedirect.com/publication/science/00404039 #Tetrahedron Letters
+http://rss.sciencedirect.com/publication/science/13871811 #Microporous and Mesoporous Materials
+http://rss.sciencedirect.com/publication/science/13877003 #Inorganic Chemistry Communications
+https://rss.sciencedirect.com/publication/science/00092614 #Chemical Physics letters
+https://rss.sciencedirect.com/publication/science/22150382 #Colloid and Interface Science Communications
+https://rss.sciencedirect.com/publication/science/09277757 #Colloids and Surfaces A: Physicochemical and Engineering Aspects
+https://rss.sciencedirect.com/publication/science/00167037 #Geochimica et cosmochimica acta
+https://rss.sciencedirect.com/publication/science/00191035 #icarus
+https://rss.sciencedirect.com/publication/science/00219797 #Journal of boron and interface science
+https://rss.sciencedirect.com/publication/science/03043894 #Journal of Hazardous Materials
+https://rss.sciencedirect.com/publication/science/10445803 #Materials Characterization
+https://rss.sciencedirect.com/publication/science/00255408 #Materials Research bulletin
+#Cell
+https://www.cell.com/cell-reports-physical-science/inpress.rss #Cell Reports Physical Science
+https://www.cell.com/chem/inpress.rss #Chem
+https://www.cell.com/matter/inpress.rss #Matter
 # AIP, APS
-https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=apl
-https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=jap
-https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=jcp
-http://feeds.aps.org/rss/recent/pra.xml
-http://feeds.aps.org/rss/recent/prb.xml
-http://feeds.aps.org/rss/recent/pre.xml
-http://feeds.aps.org/rss/recent/prl.xml
-http://feeds.aps.org/rss/recent/prmaterials.xml
-http://feeds.aps.org/rss/recent/prx.xml
-http://feeds.aps.org/rss/recent/rmp.xml
+https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=apl #Applied Physics Letters
+https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=jap #Journal of Applied Physics
+https://aip.scitation.org/action/showFeed?type=etoc&feed=rss&jc=jcp #The Journal of Chemical Physics
+https://aip.scitation.org/feed/cha/most-recent #Chaos
+https://aip.scitation.org/feed/phf/most-recent #Physics of Fluids
+http://feeds.aps.org/rss/recent/pra.xml #Phys. Rev. A
+http://feeds.aps.org/rss/recent/prb.xml #Phys. Rev. B
+http://feeds.aps.org/rss/recent/pre.xml #Phys. Rev. E
+http://feeds.aps.org/rss/recent/prl.xml #Phys. Rev. Lett.
+http://feeds.aps.org/rss/recent/prmaterials.xml #Phys. Rev. Materials
+http://feeds.aps.org/rss/recent/prx.xml #Phys. Rev. X
+http://feeds.aps.org/rss/recent/rmp.xml #Rev. Mod. Phys.
+http://feeds.aps.org/rss/recent/prfluids.xml #Phys. Rev. Fluids
+# MDPI
+https://www.mdpi.com/rss/journal/applsci #Applied Science
+https://www.mdpi.com/rss/journal/minerals #Minerals
+https://www.mdpi.com/rss/journal/crystals #Crystals
+#IOP
+https://iopscience.iop.org/journal/rss/0295-5075 #EPL (Europhysics Letters)
+#Royal Society Publishing
+https://royalsocietypublishing.org/action/showFeed?type=etoc&feed=rss&jc=rsfs #Interface Focus
+https://royalsocietypublishing.org/action/showFeed?type=etoc&feed=rss&jc=rsta #Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences
+https://royalsocietypublishing.org/action/showFeed?type=etoc&feed=rss&jc=rspa #Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences
+https://royalsocietypublishing.org/action/showFeed?type=etoc&feed=rss&jc=rspb #Proceedings of the Royal Society B: Biological Sciences
 # Misc
-https://www.beilstein-journals.org/bjoc/content/rss.xml
-https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000083.xml
-https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000084.xml
+https://www.beilstein-journals.org/bjoc/content/rss.xml #Beilstein Journal of Organic Chemistry
+https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000083.xml #Synlett
+https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000084.xml #Synthesis
+https://www.liebertpub.com/action/showFeed?ui=0&mi=0&ai=sw&jc=ast&type=etoc&feed=rss #Astrobiology
+https://dergipark.org.tr/en/pub/boron/rss/lastissue/en #Boron
+https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS #PNAS
 # Preprints
-https://chemrxiv.org/engage/rss/chemrxiv
+https://chemrxiv.org/engage/rss/chemrxiv #ChemRxiv
 http://export.arxiv.org/rss/cond-mat.mtrl-sci
 http://export.arxiv.org/rss/cond-mat.str-el
 http://export.arxiv.org/rss/physics.app-ph
