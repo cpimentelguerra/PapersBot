@@ -29,9 +29,12 @@ regex = re.compile(r"""
   (   chemical.gardens
     | chemical.garden
     | chemgarden
-    | chemgardens
     | silica.garden
     | silica.gardens
+    | silicate.garden
+    | silicate.gardens
+    | crystal.garden
+    | crystal.gardens
     | chemobrionics
     | chemobrionic
     | mineral.membranes
@@ -58,12 +61,17 @@ def entryMatches(entry):
         return False
 
 #Modified by https://github.com/boyntonr/PapersBot
+#ACS Completed
 acsTwitter = {
     "acsearthspacechem": "ACSEarthSpace", "acsaem": "acs_aem", "acsami": "acs_ami", "acsanm": "acs_anm", "acscatal": "ACSCatalysis",
-    "acscentsci": "ACSCentSci", "acsenergylett": "ACSEnergyLett", "acsnano": "acsnano", "acssuschemeng": "ACSSustainable",
-    "acs.chemrev": "ACSChemRev", "acs.chemmater": "ChemMater", "acs.cgd": "CGD_ACS", "acs.est": "EnvSciTech",
-    "acs.inorgchem": "InorgChem", "jacs": "J_A_C_S", "acs.jcim": "JCIM_ACS", "acs.jpcb": "JPhysChem", "acs.jpcc": "JPhysChem",
-    "acs.jpclett": "JPhysChem", "acs.langmuir": "ACS_Langmuir", "acs.nanolett": "NanoLetters"}
+    "acs.accounts": "ACSPublications", "acscentsci": "ACSCentSci", "acsomega": "ACS_Omega", "acsenergylett": "ACSEnergyLett", 
+    "acsnano": "acsnano", "acsorginorgau": "ACSPublications", "acssuschemeng": "ACSSustainable", "acs.chemrev": "ACSChemRev", 
+    "acs.chemmater": "ChemMater", "acs.cgd": "CGD_ACS", "acs.energyfuels": "ACSPublications", "acs.est": "EnvSciTech", 
+    "acs.estlett": "EnvSciTech", "acs.iecr": "ACSPublications", "acs.inorgchem": "InorgChem", "jacsau": "JACS_Au", "jacs": "J_A_C_S", 
+    "acs.jchemed": "ACSPublications", "acs.jcim": "JCIM_JCTC", "acs.jctc": "JCIM_JCTC", "acs.jmedchem": "ACSBioMed", 
+    "acs.jnatprod": "ACSPublications", "acs.joc": "JOC_OL", "acs.jpca": "JPhysChem", "acs.jpcb": "JPhysChem", "acs.jpcc": "JPhysChem",
+    "acs.jpclett": "JPhysChem", "acs.langmuir": "ACS_Langmuir", "acs.nanolett": "NanoLetters", "acs.oprd": "OPRD_ACS", 
+    "acs.organomet": "Orgmet_ACS", "acs.orglett": "JOC_OL"}
 rscTwitter = {
     "BM": "BioMaterSci", "CY": "CatalysisSciTec", "CC": "ChemCommun", "SC": "ChemicalScience", "CS": "ChemSocRev", "CE": "CrystEngComm",
     "DT": "DaltonTrans", "EE": "EES_journal", "EN": "EnvSciRSC", "FD": "Faraday_D", "GC": "green_rsc", "TA": "JMaterChem",

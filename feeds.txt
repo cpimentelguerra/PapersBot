@@ -27,7 +27,7 @@ http://feeds.feedburner.com/acs/jctcce #Journal of Chemical Theory and Computati
 http://feeds.feedburner.com/acs/jmcmar #Journal of Medicinal Chemistry
 http://feeds.feedburner.com/acs/jnprdf #Journal of Natural Products
 http://feeds.feedburner.com/acs/joceah #The Journal of Organic Chemistry
-http://feeds.feedburner.com/acs/jpcafh #The Journal of Physical Chemistry A									   
+http://feeds.feedburner.com/acs/jpcafh #The Journal of Physical Chemistry A
 http://feeds.feedburner.com/acs/jpcbfk #The Journal of Physical Chemistry B
 http://feeds.feedburner.com/acs/jpccck #The Journal of Physical Chemistry C
 http://feeds.feedburner.com/acs/jpclcd #The Journal of Physical Chemistry Letters
@@ -136,7 +136,6 @@ https://rss.sciencedirect.com/publication/science/00219797 #Journal of boron and
 https://rss.sciencedirect.com/publication/science/03043894 #Journal of Hazardous Materials
 https://rss.sciencedirect.com/publication/science/10445803 #Materials Characterization
 https://rss.sciencedirect.com/publication/science/00255408 #Materials Research bulletin
-#Cell
 https://www.cell.com/cell-reports-physical-science/inpress.rss #Cell Reports Physical Science
 https://www.cell.com/chem/inpress.rss #Chem
 https://www.cell.com/matter/inpress.rss #Matter
@@ -170,10 +169,10 @@ https://www.beilstein-journals.org/bjoc/content/rss.xml #Beilstein Journal of Or
 https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000083.xml #Synlett
 https://www.thieme-connect.de/rss/thieme/en/10.1055-s-00000084.xml #Synthesis
 https://www.liebertpub.com/action/showFeed?ui=0&mi=0&ai=sw&jc=ast&type=etoc&feed=rss #Astrobiology
-https://dergipark.org.tr/en/pub/boron/rss/lastissue/en #Boron
-https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS #PNAS
+https://dergipark.org.tr/en/pub/boron/rss/lastissue/en
+https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS
 # Preprints
-https://chemrxiv.org/engage/rss/chemrxiv #ChemRxiv
+https://chemrxiv.org/engage/rss/chemrxiv
 http://export.arxiv.org/rss/cond-mat.mtrl-sci
 http://export.arxiv.org/rss/cond-mat.str-el
 http://export.arxiv.org/rss/physics.app-ph
