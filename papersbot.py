@@ -26,9 +26,9 @@ from mastodon import Mastodon, MastodonError
 
 '''
 Mastodon.create_app(
-    'Paperbot',
-    api_base_url = 'https://fediscience.org',
-    to_file = 'PaperBot.secret'
+    'Paperbot', #App name
+    api_base_url = 'https://fediscience.org', #MastodonInstance
+    to_file = 'PaperBot.secret' #File name, it can be changed
 )
 '''
 
